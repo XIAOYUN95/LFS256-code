@@ -1,0 +1,366 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.4.0">
+  <diagram name="Page-1" id="JcFEvuYltkOsfUSFpAbn">
+    <mxGraphModel dx="1649" dy="1377" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="週次スケジュール&#xa;または手動トリガー" vertex="1">
+          <mxGeometry height="78" width="204" x="286" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="discover-images Job&#xa;イメージディレクトリを検出" vertex="1">
+          <mxGeometry height="102" width="260" x="258" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="各イメージに対して&#xa;並列実行" vertex="1">
+          <mxGeometry height="222" width="222" x="277" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="scan Job: Image 1" vertex="1">
+          <mxGeometry height="54" width="188" x="24" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="scan Job: Image 2" vertex="1">
+          <mxGeometry height="54" width="188" x="294" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="scan Job: Image N" vertex="1">
+          <mxGeometry height="54" width="190" x="563" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="1. ECRログイン&#xa;2. 最新タグ取得&#xa;3. イメージプル&#xa;4. Trivyスキャン実行" vertex="1">
+          <mxGeometry height="126" width="209" x="13" y="664" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="1. ECRログイン&#xa;2. 最新タグ取得&#xa;3. イメージプル&#xa;4. Trivyスキャン実行" vertex="1">
+          <mxGeometry height="126" width="209" x="283" y="664" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="1. ECRログイン&#xa;2. 最新タグ取得&#xa;3. イメージプル&#xa;4. Trivyスキャン実行" vertex="1">
+          <mxGeometry height="126" width="209" x="553" y="664" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="レポートアップロード&#xa;Wikiに公開" vertex="1">
+          <mxGeometry height="78" width="220" x="8" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="レポートアップロード&#xa;Wikiに公開" vertex="1">
+          <mxGeometry height="78" width="220" x="278" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="レポートアップロード&#xa;Wikiに公開" vertex="1">
+          <mxGeometry height="78" width="220" x="548" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="create-pr-when-vuln-found Job&#xa;既存PR確認" vertex="1">
+          <mxGeometry height="102" width="260" x="258" y="968" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-74" edge="1" parent="1" source="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-73" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="既存PRあり?" vertex="1">
+          <mxGeometry height="142" width="142" x="317" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="build-workflowsを&#xa;アサイン" vertex="1">
+          <mxGeometry height="78" width="190" x="156" y="2120" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="全Trivyレポート&#xa;ダウンロード" vertex="1">
+          <mxGeometry height="78" width="174" x="362" y="1336" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="脆弱性&#xa;検出?" vertex="1">
+          <mxGeometry height="126" width="126" x="386" y="1464" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="終了" vertex="1">
+          <mxGeometry height="54" width="92" x="312" y="1676" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="PR本文作成&#xa;Wikiリンク含む" vertex="1">
+          <mxGeometry height="78" width="171" x="454" y="1664" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="trivy-vuln-alert&#xa;ブランチ作成&#xa;空コミット" vertex="1">
+          <mxGeometry height="102" width="169" x="455" y="1792" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="PR作成&#xa;タイトル: Trivy scan detected&#xa;vulnerabilities" vertex="1">
+          <mxGeometry height="126" width="260" x="410" y="1944" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="build-workflowsを&#xa;アサイン" vertex="1">
+          <mxGeometry height="78" width="190" x="445" y="2120" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="PR assigned イベント" vertex="1">
+          <mxGeometry height="54" width="212" x="282" y="2248" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;" value="条件チェック&#xa;assignee = build-workflows&#xa;branch = trivy-vuln-alert&#xa;draft = false" vertex="1">
+          <mxGeometry height="318" width="318" x="229" y="2352" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="スキップ" vertex="1">
+          <mxGeometry height="54" width="124" x="210" y="2744" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="claude-dockerfile-fix Job" vertex="1">
+          <mxGeometry height="54" width="240" x="384" y="2744" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="Claude Codeによって&#xa;Dockerfileの依存関係更新" vertex="1">
+          <mxGeometry height="78" width="245" x="381.5" y="2849" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-76" edge="1" parent="1" source="35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-75" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="build-workflowsの&#xa;アサインを解除" vertex="1">
+          <mxGeometry height="78" width="190" x="409.5" y="2977" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="終了" vertex="1">
+          <mxGeometry height="54" width="92" x="458.5" y="3105" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" source="2" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="39" edge="1" parent="1" source="4" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.75;entryX=0.5;entryY=0;" target="5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="118" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40" edge="1" parent="1" source="4" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41" edge="1" parent="1" source="4" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.75;entryX=0.5;entryY=0;" target="7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="658" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="42" edge="1" parent="1" source="5" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="43" edge="1" parent="1" source="6" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="44" edge="1" parent="1" source="7" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45" edge="1" parent="1" source="8" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46" edge="1" parent="1" source="9" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47" edge="1" parent="1" source="10" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48" edge="1" parent="1" source="11" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.14;" target="14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="118" y="943" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="49" edge="1" parent="1" source="12" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="50" edge="1" parent="1" source="13" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.14;" target="14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="658" y="943" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51" edge="1" parent="1" source="14" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="15" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52" edge="1" parent="1" source="15" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.9;entryX=0.5;entryY=0;" target="16" value="Yes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="251" y="1299" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53" edge="1" parent="1" source="15" style="curved=1;startArrow=none;endArrow=block;exitX=0.78;exitY=1;entryX=0.5;entryY=0;" target="17" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="449" y="1299" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="54" edge="1" parent="1" source="17" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="18" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="55" edge="1" parent="1" source="18" style="curved=1;startArrow=none;endArrow=block;exitX=0.05;exitY=1;entryX=0.5;entryY=0;" target="19" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="358" y="1627" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="56" edge="1" parent="1" source="18" style="curved=1;startArrow=none;endArrow=block;exitX=0.95;exitY=1;entryX=0.5;entryY=0;" target="20" value="Yes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="1627" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57" edge="1" parent="1" source="20" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="21" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="58" edge="1" parent="1" source="21" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="22" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59" edge="1" parent="1" source="22" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="23" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="60" edge="1" parent="1" source="16" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.16;entryY=0;" target="24" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="251" y="2223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61" edge="1" parent="1" source="23" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.87;entryY=0;" target="24" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="2223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="62" edge="1" parent="1" source="24" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="25" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="63" edge="1" parent="1" source="25" style="curved=1;startArrow=none;endArrow=block;exitX=0.2;exitY=1;entryX=0.5;entryY=0.01;" target="26" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="272" y="2707" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="64" edge="1" parent="1" source="25" style="curved=1;startArrow=none;endArrow=block;exitX=0.8;exitY=1;entryX=0.5;entryY=0.01;" target="27" value="Yes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="504" y="2707" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65" edge="1" parent="1" source="27" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="34" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="504" y="2848" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="72" edge="1" parent="1" source="34" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0.01;" target="35" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="73" edge="1" parent="1" source="35" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0.01;" target="36" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-73" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="あるとslack通知？&lt;br&gt;ないとPR作成時に通知" vertex="1">
+          <mxGeometry height="96" width="226" x="680" y="1161" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-75" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;現状ここは手動でPRマージするか判断必要&lt;/div&gt;&lt;div&gt;trialビルドはこの段階の後に追加&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="267.5" x="714.5" y="2986" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-77" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="CIが失敗する際にどうやってわかる？" vertex="1">
+          <mxGeometry height="80" width="120" x="798" y="2833" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-78" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="imagebuild PR:&#xa;自動マージ" vertex="1">
+          <mxGeometry height="78" width="168" x="1022" y="2986" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-79" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="新イメージをpush&#xa;イメージhash値を取得" vertex="1">
+          <mxGeometry height="78" width="220" x="996" y="3114" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-80" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="workflowtemplates: PR作成&#xa;.Values.images.xxx に&#xa;新イメージのhash値を設定" vertex="1">
+          <mxGeometry height="102" width="259" x="976" y="3242" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-81" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="workflowtemplates CI:&#xa;Trial ビルド実行&#xa;wftmpl-trial-build" vertex="1">
+          <mxGeometry height="102" width="223" x="994" y="3394" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-82" parent="1" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="Trial ビルド成功?" vertex="1">
+          <mxGeometry height="176" width="176" x="1018" y="3546" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-83" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="Slack通知: Trial失敗&#xa;PRはopen状態で残す&#xa;原因調査 + 手動修正待ち" vertex="1">
+          <mxGeometry height="102" width="238" x="846" y="3796" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-84" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="workflowtemplates PR:&#xa;自動マージ" vertex="1">
+          <mxGeometry height="78" width="227" x="1134" y="3808" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-85" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="終了: 手動対応" vertex="1">
+          <mxGeometry height="54" width="167" x="881" y="3984" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-86" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="Slack通知: 全て成功&#xa;脆弱性対応完了&#xa;適用されたイメージhash値を通知" vertex="1">
+          <mxGeometry height="126" width="260" x="1117" y="3948" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-87" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" value="終了" vertex="1">
+          <mxGeometry height="54" width="92" x="1201" y="4124" as="geometry" />
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-88" edge="1" parent="1" source="vu49MZWozkO4CKtVbNKz-78" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-79" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-89" edge="1" parent="1" source="vu49MZWozkO4CKtVbNKz-79" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-80" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-90" edge="1" parent="1" source="vu49MZWozkO4CKtVbNKz-80" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-81" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-91" edge="1" parent="1" source="vu49MZWozkO4CKtVbNKz-81" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-82" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-92" edge="1" parent="1" source="vu49MZWozkO4CKtVbNKz-82" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.94;entryX=0.5;entryY=0;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-83" value="Failed">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="965" y="3759" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-93" edge="1" parent="1" source="vu49MZWozkO4CKtVbNKz-82" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.94;entryX=0.5;entryY=0;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-84" value="OK">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1247" y="3759" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-94" edge="1" parent="1" source="vu49MZWozkO4CKtVbNKz-83" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-85" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vu49MZWozkO4CKtVbNKz-95" edge="1" parent="1" source="vu49MZWozkO4CKtVbNKz-86" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fillColor=#d5e8d4;strokeColor=#82b366;" target="vu49MZWozkO4CKtVbNKz-87" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
